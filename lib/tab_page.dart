@@ -19,7 +19,7 @@ class _TabPageState extends State<TabPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(child: _pages[_selectedIndex]),
-      bottomNavigationBar: BottomNavigationBar(onTap: _onItemTapped, currentIndex: _selectedIndex, items: <BottomNavigationBarItem>[
+      bottomNavigationBar: BottomNavigationBar(fixedColor: Colors.black, onTap: _onItemTapped, currentIndex: _selectedIndex, items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
         BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('Search')),
         BottomNavigationBarItem(icon: Icon(Icons.account_circle), title: Text('Account')),
