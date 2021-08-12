@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+            'Instagram Clon,'
+            style: TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+}
