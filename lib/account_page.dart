@@ -14,16 +14,16 @@ class _AccountPageState extends State<AccountPage> {
     );
   }
 
- Widget _buildAppBar() {
+  Widget _buildAppBar() {
     return AppBar(
       actions: <Widget>[
         IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.exit_to_app),
+          onPressed: () {},
+          icon: Icon(Icons.exit_to_app),
         )
       ],
     );
- }
+  }
 
   Widget _buildBody() {
     return Padding(
@@ -37,58 +37,64 @@ class _AccountPageState extends State<AccountPage> {
               Stack(
                 children: <Widget>[
                   SizedBox(
-                    width:80.0,
-                    height:80.0,
-                    child:CircleAvatar(
+                    width: 80.0,
+                    height: 80.0,
+                    child: CircleAvatar(
                       backgroundImage: NetworkImage('https://search.pstatic.net/common?type=a&size=120x150&quality=95&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F3%2F201806141425238771.jpg'),
                     ),
                   ),
                   Container(
-                    width:80.0,
-                    height:80.0,
+                    width: 80.0,
+                    height: 80.0,
                     alignment: Alignment.bottomRight,
                     child: Stack(
                       alignment: Alignment.center,
                       children: <Widget>[
-                      SizedBox(
-                        width:28.0,
-                        height:28.0,
-                        child: FloatingActionButton(onPressed: null,
-                          backgroundColor: Colors.white,
+                        SizedBox(
+                          width: 28.0,
+                          height: 28.0,
+                          child: FloatingActionButton(
+                            onPressed: null,
+                            backgroundColor: Colors.white,
+                          ),
                         ),
-                    ),
-                      
-                      SizedBox(
-                        width:25.0,
-                        height:25.0,
-                        child: FloatingActionButton(onPressed: null,
-                          backgroundColor: Colors.blue,
-                          child:Icon(Icons.add),
+                        SizedBox(
+                          width: 25.0,
+                          height: 25.0,
+                          child: FloatingActionButton(
+                            onPressed: null,
+                            backgroundColor: Colors.blue,
+                            child: Icon(Icons.add),
+                          ),
                         ),
-                      ), 
                       ],
-                    ),
                     ),
                   ),
                 ],
               ),
-              Padding(padding: EdgeInsets.all(8.0),),
-              Text('name',
-                style:TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Text(
+                'name',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
               ),
             ],
           ),
-          Text('0\n게시물',
+          Text(
+            '0\n게시물',
             textAlign: TextAlign.center,
-            style:TextStyle(fontSize: 18.0),
+            style: TextStyle(fontSize: 18.0),
           ),
-          Text('0\n팔로워'
+          Text(
+            '0\n팔로워',
             textAlign: TextAlign.center,
-            style:TextStyle(fontSize: 18.0),
+            style: TextStyle(fontSize: 18.0),
           ),
-          Text('0\n팔로잉'
+          Text(
+            '0\n팔로잉',
             textAlign: TextAlign.center,
-            style:TextStyle(fontSize: 18.0),
+            style: TextStyle(fontSize: 18.0),
           ),
         ],
       ),
