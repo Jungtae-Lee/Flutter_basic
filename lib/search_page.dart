@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'create_page.dart';
 
 class SearchPage extends StatefulWidget {
   @override
@@ -12,7 +13,9 @@ class _SearchPageState extends State<SearchPage> {
     return Scaffold(
       body: _buildBody(),
       floatingActionButton: FloatingActionButton(
-        onPressed: null,
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => CreatePage()));
+        },
         child: Icon(Icons.create),
         backgroundColor: Colors.blue,
       ),
