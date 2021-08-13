@@ -29,6 +29,6 @@ class _SearchPageState extends State<SearchPage> {
   }
 
   Widget _buildListItem(BuildContext context, int index) {
-    return Image.network('http://image.munhwa.com/gen_news/202108/2021081301031939321001_b.jpg?v=20210813204819', fit: BoxFit.cover);
+    return Image.network('https://img6.yna.co.kr/photo/etc/epa/2021/08/12/PEP20210812069701009_P4.jpg', fit: BoxFit.cover);
   }
 }
