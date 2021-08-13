@@ -6,21 +6,22 @@ class CreatePage extends StatefulWidget {
 }
 
 class _CreatePageState extends State<CreatePage> {
-  final textEditingController=TextEditingController();
-  
+  final textEditingController = TextEditingController();
+
   @override
   void dispose() {
     textEditingController.dispose();
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
       body: _buildBody(),
-      floatingActionButton: FloatingActionButton(onPressed: Null,
-          child: Icon(Icons.add_a_photo),
+      floatingActionButton: FloatingActionButton(
+        onPressed: Null,
+        child: Icon(Icons.add_a_photo),
       ),
     );
   }
@@ -29,8 +30,8 @@ class _CreatePageState extends State<CreatePage> {
     return AppBar(
       actions: <Widget>[
         IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.send),
+          onPressed: () {},
+          icon: Icon(Icons.send),
         )
       ],
     );
@@ -38,13 +39,13 @@ class _CreatePageState extends State<CreatePage> {
 
   Widget _buildBody() {
     return Column(
-      children: <Widget> [
+      children: <Widget>[
         Text('No Image'),
         TextField(
           decoration: InputDecoration(hintText: '내용을 입력하세요'),
           controller: textEditingController,
         )
       ],
-    )
+    );
   }
 }
