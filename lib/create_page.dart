@@ -17,10 +17,10 @@ class _CreatePageState extends State<CreatePage> {
     return AppBar(
       actions: <Widget>[
         IconButton(
-            onPressed: null,
-            icon: Icon(Icons.send),
+          onPressed: null,
+          icon: Icon(Icons.send),
         )
       ],
-    )
+    );
   }
 }
