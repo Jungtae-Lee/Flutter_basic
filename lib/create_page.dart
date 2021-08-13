@@ -20,7 +20,7 @@ class _CreatePageState extends State<CreatePage> {
       appBar: _buildAppBar(),
       body: _buildBody(),
       floatingActionButton: FloatingActionButton(
-        onPressed: Null,
+        onPressed: () {},
         child: Icon(Icons.add_a_photo),
       ),
     );
