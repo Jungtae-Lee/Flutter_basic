@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'search_page.dart';
 import 'home_page.dart';
 import 'account_page.dart';
 
@@ -12,7 +13,7 @@ class _TabPageState extends State<TabPage> {
 
   List _pages = [
     HomePage(),
-    Text('page2'),
+    SearchPage(),
     AccountPage(),
   ];
 
